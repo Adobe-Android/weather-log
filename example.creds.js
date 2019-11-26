@@ -1,4 +1,5 @@
 const { Client } = require('pg');
+const secKey = 'secret';
 const newLocal = new Client({
     user: 'db_user',
     host: 'hostname',
@@ -7,3 +8,4 @@ const newLocal = new Client({
     port: 5432,
 });
 exports.creds = newLocal;
+exports.apiKey = secKey;
