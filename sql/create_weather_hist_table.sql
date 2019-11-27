@@ -1,5 +1,6 @@
 CREATE TABLE weather_history (
-    date_time TIMESTAMPTZ PRIMARY KEY DEFAULT CURRENT_TIMESTAMP,
+    time_cdt TIME PRIMARY KEY DEFAULT CURRENT_TIME,
+    date_inserted DATE DEFAULT CURRENT_DATE,
     temperature FLOAT(2),
     feels_like_temperature FLOAT(2),
     humidity FLOAT(2),

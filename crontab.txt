@@ -1,0 +1,1 @@
+* * * * * /home/user_web/.volta/bin/node /home/user_web/weather_log/app/app.js

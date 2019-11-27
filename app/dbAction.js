@@ -1,8 +1,8 @@
-const { creds: newLocal } = require("./creds");
+const { creds: newLocal } = require('../creds/creds');
+const client = newLocal;
+client.connect();
 
 function dbAction(dbQuery, dbValues) {
-    const client = newLocal;
-    client.connect();
     client.query(dbQuery, dbValues)
         .catch(e => console.error(e.stack))
         .finally(() => client.end());
