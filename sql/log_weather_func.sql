@@ -1,6 +1,6 @@
 CREATE FUNCTION log_weather(p1 FLOAT, p2 FLOAT, p3 FLOAT, p4 FLOAT, p5 FLOAT, p6 INTEGER, p7 FLOAT, p8 FLOAT, p9 FLOAT, p10 FLOAT, p11 INTEGER, p12 VARCHAR) RETURNS void AS $$
 BEGIN
-INSERT INTO weather_log.weather_history (
+INSERT INTO weather_user.weather_history (
     temperature
     ,feels_like_temperature
     ,humidity
